@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Handjet', cursive;
+}
+
+header {
+  background: #1a01f7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, hsla(0, 4%, 89%, 0.747), #3931a8), url(../img/2.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, hsla(10, 8%, 95%, 0.753), #383aa0), url(../img/2.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+
+nav>a {
+  color: #edeef3;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav>a:hover {
+  text-decoration: underline;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.titles-header h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.titles-header h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+
+header .titles-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+main {
+  background: #2629ce;
+
+}
+
+main .sobre-nosotros {
+  padding: 30px 0 60px 0;
+  background: #2629ce;
+}
+
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagen-about-us {
+  width: 48%;
+}
+
+.sobre-nosotros .contenido-textos {
+  width: 48%;
+}
+
+.contenido-textos h3 {
+  margin-bottom: 15px;
+  color: #fbfbfc
+}
+
+.contenido-textos h3 span {
+  background: #f70202;
+  color: #fcf7f7;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgb(255, 255, 255);
+  margin-right: 5px;
+}
+
+.contenido-textos p {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+  color: #fbfbfc
+}
+
+.portafolio {
+  background: #2629ce;
+}
+
+.galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagen-port {
+  width: 24%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgb(255, 255, 255);
+}
+
+.imagen-port>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: hsla(240, 100%, 0%, 0.7);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover-galeria img {
+  width: 50px;
+}
+
+.hover-galeria p {
+  color: #fbfbfc;
+}
+
+.imagen-port:hover .hover-galeria {
+  transform: scale(1);
+}
+
+.clientes-FIFA {
+  background: #2629ce;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards .card {
+  background: #000000;
+  display: flex;
+  width: 46%;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+}
+
+.cards .card>.contenido-texto-card {
+  width: 60%;
+  color: #fff;
+}
+
+.cards .card>.contenido-texto-card p {
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+.nuestros-servicios {
+  background: #2629ce;
+}
+
+.about-services {
+  background: #f4f4f5;
+  padding-bottom: 30px;
+}
+
+.servicio-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicio-ind {
+  width: 28%;
+  text-align: center;
+}
+
+.servicio-ind img {
+  width: 90%;
+}
+
+.servicio-ind h2 {
+  margin: 10px 0;
+  color: #fbfbfc
+}
+
+.servicio-ind p {
+  font-weight: 300;
+  text-align: justify;
+  color: #fbfbfc
+}
+
+footer {
+  background: #000008;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+  text-align: center;
+}
+
+.content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid #fa0202;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p {
+  color: #fff;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #fdfbfb;
+}
+
+
+form {
+  background: #1512eb;
+  width: 360px;
+  border: 1px solid #0505f5;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #e63030;
+  margin: 100px auto;
+}
+
+form h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 30pt;
+  margin: 10px 30px;
+}
+
+form input {
+  width: 280px;
+  height: 35px;
+  padding: 0px;
+  color: #2f0fe2;
+  text-align: center;
+  margin: 10px 30px;
+}
+
+form button {
+  width: 135px;
+  margin: 20px 0px 30px 100px;
+  height: 50px;
+  background: #2f0fe2;
+  color: #ffffff;
+  text-align: center;
+  border: 5px solid #2f0fe2;
+  box-shadow: 0px 2px 0px #2f0fe2;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #c72f2f;
+}
+
+#carrito-botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#btn-vaciar-carrito {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btn-pagar {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btn-pagar:hover {
+  background-color: #218838;
+}
+
+#btn-vaciar-carrito:hover {
+  background-color: #c82333;
+}
+
+
+.carrito {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+
+.carrito h2 {
+  margin-bottom: 1rem;
+}
+
+.carrito ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carrito li {
+  margin-bottom: 0.5rem;
+}
+
+button,
+a.button-link {
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+
+button:hover,
+a.button-link:hover {
+  background-color: #0056b3;
+}
+
+.btn-eliminar {
+  font-size: 10px;
+  padding: 2px 6px;
+  margin-left: 8px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.btn-eliminar:hover {
+  background-color: #c82333;
+}
+
+
+#toggle-carrito {
+  background-color: #28a745;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#btn-logout {
+  background-color: #dc3545;
+
+}
+
+#btn-logout:hover {
+  background-color: #a71d2a;
+}
+
+#menu-usuario-opciones {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#bienvenida-usuario {
+  color: #ffffff;
+}
+
+#bienvenida-usuario:hover {
+  text-decoration: underline;
+}
+
+.imagen-port {
+  width: 23%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  background-color: #000;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.imagen-port:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.imagen-port img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.hover-info {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 12px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.btn-carrito {
+  display: none;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.imagen-port:hover .btn-carrito {
+  display: inline-block;
+}
+
+.btn-carrito:hover {
+  background-color: #0056b3;
+}

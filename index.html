@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@700&display=swap" rel="stylesheet">
+  <title>Castlegames</title>
+  <link rel="shortcut icon" href="img/castilloicono.webp" type="image/x-icon" />
+  <script defer src="js/scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Catalogo</a>
+      <a href="#">Próximamente</a>
+      <a href="#">Más Vendido</a>
+      <a href="#">Soporte Tecnico</a>
+      <a href="formulario.html" id="btn-login">Iniciar sesión</a>
+      <a href="formulario2.html" id="btn-registro">Registrarse</a>
+
+      <div id="usuario-menu" style="position: fixed; top: 100px;  right: 60px;">
+        <div id="bienvenida-usuario" style="cursor: pointer; font-weight: bold;"></div>
+        <div id="menu-usuario-opciones"
+          style="display: none; background-color: white; border: 1px solid #ccc; padding: 10px; border-radius: 8px; margin-top: 5px;">
+          <button id="btn-logout">Cerrar sesión</button>
+        </div>
+      </div>
+
+      <button id="toggle-carrito" style="position: fixed; top: 200px; right: 20px; z-index: 1000;">
+        🛒 Ver Carrito (<span id="contador-carrito">0</span>)
+      </button>
+
+    </nav>
+
+    <section class="titles-header">
+      <h1>Castlegames</h1>
+      <h2>Juegos para todo publico</h2>
+    </section>
+
+  </header>
+  <main>
+    <section class="contenedor sobre-nosotros">
+      <h2 class="titulo">SOBRE NOSOTROS</h2>
+      <div class="contenedor-sobre-nosotros">
+        <img class="imagen-about-us" src="img/2.jpg" alt="Producto1" />
+        <div class="contenido-textos">
+          <h3><span>1</span>¿Quienes Somos?</h3>
+          <p>
+            Somos una tienda dedicada exclusivamente a la venta de videojuegos para todas las plataformas y gustos.
+            Nuestra pasión por el mundo gamer nos impulsa a ofrecer títulos clásicos, lanzamientos recientes y lo mejor
+            del catálogo digital. Nos enfocamos en brindar una experiencia de compra sencilla, segura y con atención
+            personalizada, para que cada jugador encuentre su próximo juego favorito con confianza y facilidad. En
+            nuestra tienda, los videojuegos no son solo productos: son parte de nuestra identidad.
+          </p>
+          <h3><span>2</span>Nuestro Objetivo</h3>
+          <p>
+            Nuestro objetivo es convertirnos en la tienda digital de referencia para los amantes de los videojuegos,
+            ofreciendo un catálogo actualizado, precios competitivos y un servicio confiable. Buscamos facilitar el
+            acceso a títulos de calidad, fomentando una comunidad gamer basada en la confianza, la pasión por jugar y la
+            excelencia en la experiencia de compra.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="portafolio">
+      <div class="contenedor">
+        <h2 class="titulo">CATALOGO DISPONIBLE</h2>
+        <div class="galeria-port">
+          <div class="imagen-port">
+            <img src="img/juego.jpg" alt="Grand Theft Auto V enhanced Edition" />
+            <div class="hover-info">
+              <h3>Grand Theft Auto V enhanced Edition</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$90.000</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('Grand Theft Auto V')">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego 2.jpg" alt="Red Dead Redemption 2" />
+            <div class="hover-info">
+              <h3>Red Dead Redemption 2</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$239.900</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('Red Dead Redemption 2')">Agregar al
+                carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego3.jpg" alt="Mortal Kombat 1" />
+            <div class="hover-info">
+              <h3>Mortal Kombat 1</h3>
+              <p>Disponible para Playstation 5.</p>
+              <p class="precio">$158.000</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('Mortal Kombat 1')">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego4.jpg" alt="EA SPORTS FC 25" />
+            <div class="hover-info">
+              <h3>EA SPORTS FC 25</h3>
+              <p>Disponible para Playstation 5.</p>
+              <p class="precio">$279.000</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('EA SPORTS FC 25')">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego5.jpg" alt="HELLDIVERS 2" />
+            <div class="hover-info">
+              <h3>HELLDIVERS 2</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$149.000</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('HELLDIVERS 2')">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego6.jpg" alt="The Last of Us Parte 1" />
+            <div class="hover-info">
+              <h3>The Last of Us Parte 1</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$219.000</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('The Last of Us Parte 1')">Agregar al
+                carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego7.jpg" alt="The Last of Us Parte 2" />
+            <div class="hover-info">
+              <h3>The Last of Us Parte 2 Remastered</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$219.000</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('The Last of Us Parte 2')">Agregar al
+                carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego8.jpg" alt="Schedule I" />
+            <div class="hover-info">
+              <h3>Schedule I</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$47.500</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('Schedule I')">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego9.jpg" alt="Warhammer 40,000: Space Marine 2" />
+            <div class="hover-info">
+              <h3>Warhammer 40,000: Space Marine 2</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$189.500</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('Warhammer 40,000: Space Marine 2')">Agregar al
+                carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego10.jpg" alt="Doom the dark ages" />
+            <div class="hover-info">
+              <h3>DOOM: The Dark Ages</h3>
+              <p>Disponible para Playstation 5.</p>
+              <p class="precio">$279.500</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('Doom the dark ages')">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego11.jpg" alt="Split Fiction" />
+            <div class="hover-info">
+              <h3>Split Fiction</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$199.999</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('Split Fiction')">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego12.jpg" alt="Dead Island 2" />
+            <div class="hover-info">
+              <h3>Dead Island 2</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$167.999</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('Dead Island 2')">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="imagen-port">
+            <img src="img/juego13.jpg" alt="Forza Horizon 5" />
+            <div class="hover-info">
+              <h3>Forza Horizon 5</h3>
+              <p>Disponible para PC.</p>
+              <p class="precio">$214.900</p>
+              <button class="btn-carrito" onclick="agregarAlCarrito('Forza Horizon 5')">Agregar al carrito</button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <section class="contenedor clientes-FIFA">
+      <h2 class="titulo">PRÓXIMAMENTE</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="img/proximamente1.jpg" alt="" />
+          <div class="contenido-texto-card">
+            <h3>Grand Theft Auto VI</h3>
+            <p>
+              Grand Theft Auto VI es la próxima entrega de la icónica saga de Rockstar Games. Ambientado en una versión
+              moderna de Vice City, el juego ofrecerá un mundo abierto más vivo y detallado, con nuevas mecánicas,
+              narrativa envolvente y gráficos de última generación. Promete una experiencia aún más realista y ambiciosa
+              que sus predecesores.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/proximamente2.jpg" alt="" />
+          <div class="contenido-texto-card">
+            <h3>Mafia The Old Country</h3>
+            <p>
+              Mafia: The Old Country es un juego de acción y crimen ambientado en los orígenes de la saga Mafia. Situado
+              en una Europa de principios del siglo XX, narra el ascenso de un joven dentro de una organización
+              criminal, con una historia cinematográfica, entornos detallados y jugabilidad centrada en la narrativa y
+              el drama mafioso.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="nuestros-servicios">
+      <div class="contenedor">
+        <h2 class="titulo">MÁS VENDIDO</h2>
+        <div class="servicio-cont">
+          <div class="servicio-ind">
+            <img src="img/masvendido1.jpeg" alt="">
+            <h2>Grand Theft Auto V</h2>
+            <p>Grand Theft Auto V: Enhanced Edition es una versión mejorada del exitoso título de Rockstar Games,
+              diseñada para consolas de nueva generación y PC. Esta edición ofrece gráficos en 4K, mayor fluidez con
+              hasta 60 FPS, tiempos de carga más rápidos, mejor iluminación, texturas detalladas y efectos visuales
+              avanzados. Además, incluye mejoras en la jugabilidad y acceso a contenido adicional en GTA Online,
+              brindando una experiencia más inmersiva y realista en Los Santos y Blaine County.</p>
+          </div>
+          <div class="servicio-ind">
+            <img src="img/masvendido2.jpg" alt="">
+            <h2>The Last of Us Parte 2 Remastered</h2>
+            <p>The Last of Us Parte II es un videojuego de acción y aventura desarrollado por Naughty Dog, ahora
+              disponible también para PC con mejoras gráficas, compatibilidad con monitores ultrawide, tasas de cuadros
+              desbloqueadas y opciones avanzadas de configuración. La historia sigue a Ellie en un viaje cargado de
+              emociones, venganza y supervivencia en un mundo devastado. Esta versión ofrece una experiencia más
+              inmersiva y personalizable, aprovechando todo el potencial del hardware de PC.</p>
+          </div>
+          <div class="servicio-ind">
+            <img src="img/masvendido3.jpg" alt="">
+            <h2>HELLDIVERS 2</h2>
+            <p>HELLDIVERS 2 es un videojuego de disparos en tercera persona desarrollado por Arrowhead Game Studios,
+              centrado en el combate cooperativo. En este título, los jugadores forman parte de una unidad de élite
+              encargada de defender la “Super Tierra” contra amenazas alienígenas en intensas misiones estratégicas. Con
+              acción frenética, fuego amigo activado y énfasis en el trabajo en equipo, ofrece una experiencia
+              desafiante, divertida y caóticamente coordinada, ideal para jugar en grupo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <div class="contenedor-footer">
+      <div class="content-foo">
+        <h4>Telefono</h4>
+        <p>3154225993</p>
+      </div>
+      <div class="content-foo">
+        <h4>Email</h4>
+        <p>alvarocastillo@estudiante.uniajc.edu.co</p>
+        <p>jandrescifuentes@estudiante.uniajc.edu.co</p>
+      </div>
+      <div class="content-foo">
+        <h4>Ciudad</h4>
+        <p>Cali-Colombia</p>
+      </div>
+    </div>
+    <h2 class="titulo-final">Soporte Tecnico</h2>
+
+    <h2 class="titulo-final">&copy; 2025 Castlegames. Todos los derechos reservados </h2>
+
+  </footer>
+
+  <div id="carrito-container"
+    style="display: none; position: fixed; top: 250px; right: 20px; width: 400px; background: #fff; border: 1px solid #ccc; padding: 1rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); z-index: 999;">
+    <h2>Carrito de compras</h2>
+    <ul id="lista-carrito" style="list-style:none;padding:0;"></ul>
+
+    <!-- TOTAL -->
+    <p id="total-carrito" style="font-weight:bold;margin:8px 0;"></p>
+
+    <!-- Ponle un id para poder mostrar/ocultar cómodamente -->
+    <div id="carrito-botones"
+      style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+      <button id="btn-vaciar-carrito" onclick="vaciarCarrito()">Vaciar carrito</button>
+      <button id="btn-pagar">Continuar con el pago</button>
+    </div>
+  </div>
+</body>
+
+</html>
