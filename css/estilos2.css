@@ -29,8 +29,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
-
 form {
   background: rgba(0, 0, 64, 0.8);
   border: 2px solid #00ffff;
@@ -40,15 +38,12 @@ form {
   width: 300px;
   text-align: center;
 }
-
-
 form h1 {
   margin-bottom: 20px;
   font-size: 1.8rem;
   color: #00ccff;
   text-shadow: 0 0 10px #00ffff;
 }
-
 form input {
   width: 100%;
   padding: 12px;
