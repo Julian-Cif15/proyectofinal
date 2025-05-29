@@ -6,15 +6,28 @@
   font-family: 'Orbitron', sans-serif;
 }
 
-/* Fondo estilo videojuegos */
+/* Fondo estilo videojuegos multicolor animado */
 body {
-  background-color: #0a0f2c;
-  color: #00ffff;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(circle, #1b1f3b 0%, #0a0f2c 100%);
+  background: linear-gradient(-45deg, #ff0066, #00ffff, #ffcc00, #6600ff);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  color: #00ffff;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Formulario central */
