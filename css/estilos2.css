@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@
   font-family: 'Orbitron', sans-serif;
 }
 
-/* Fondo estilo videojuegos multicolor animado */
 body {
   height: 100vh;
   display: flex;
@@ -22,15 +20,17 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
-/* Formulario central */
+
 form {
   background: rgba(0, 0, 64, 0.8);
   border: 2px solid #00ffff;
@@ -41,7 +41,7 @@ form {
   text-align: center;
 }
 
-/* Título */
+
 form h1 {
   margin-bottom: 20px;
   font-size: 1.8rem;
@@ -49,7 +49,6 @@ form h1 {
   text-shadow: 0 0 10px #00ffff;
 }
 
-/* Inputs */
 form input {
   width: 100%;
   padding: 12px;
@@ -67,7 +66,7 @@ form input:focus {
   box-shadow: 0 0 10px #00ccff;
 }
 
-/* Botón */
+
 form button {
   width: 100%;
   padding: 12px;
@@ -86,5 +85,4 @@ form button:hover {
   box-shadow: 0 0 10px #00ffff;
 }
 
-/* Fuente gamer */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
